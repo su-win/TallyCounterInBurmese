@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TallyCounterInBurmese</string>
+    <string name="restart_button">Restart</string>
+    <string name="exit_button">Exit</string>
+</resources>
