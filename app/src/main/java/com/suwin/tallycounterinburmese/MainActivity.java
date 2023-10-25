@@ -1,5 +1,6 @@
 package com.suwin.tallycounterinburmese;
 //Written by Su Win
+//GitHub: https://github.com/su-win
 
 import android.os.Bundle;
 import android.view.View;
@@ -58,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
     //update the counter display
     private void updateCounterDisplay() {
-        counterDisplay.setText(String.valueOf(counter));
+        DigitToBurmeseMapper mapper = new DigitToBurmeseMapper();
+        String nums = String.valueOf(counter);
+        StringBuilder converted = new StringBuilder();
+        for(int i = 0; i <= nums.length()-1; i++){
+            char digit = nums.charAt(i);
+            converted.append(mapper.getBumeseCharacter(digit));
+        }
+        counterDisplay.setText(converted.toString());
     }
 }

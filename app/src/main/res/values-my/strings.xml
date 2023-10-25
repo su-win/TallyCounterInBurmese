@@ -3,5 +3,6 @@
     <string name="app_name">ရေတွက်မယ်</string>
     <string name="restart_button">သုည မှ ပြန်စမည်</string>
     <string name="exit_button">ထွက်မည်</string>
+    <string name="zero">၀</string>
 </resources>
 
